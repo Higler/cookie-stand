@@ -1,0 +1,53 @@
+body {
+  background-color: white;
+}
+
+header {
+  height: 100px;
+  background-color: black;
+  color: salmon;
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Righteous', sans-serif;
+}
+
+h1 {
+  font-family: 'Righteous', sans-serif;
+}
+
+footer {
+  background-color: lightgray;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: salmon;
+  overflow: hidden;
+}
+
+ul.navbar li {
+  display: inline;
+}
+
+ul.navbar li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover {
+  background-color: #555;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  display: block;
+  margin: 0 auto;
+}

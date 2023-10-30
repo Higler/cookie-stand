@@ -43,6 +43,17 @@ const lima ={
 
 console.log (lima);
 
+const seattleSalesSection = document.getElementById('seattleSales');
+
+const seattleSales = document.createElement('div');
+seattleSales.textContent = seattle.sales;
+
+seattleSalesSection.appendChild(seattleSales);
+
+
+
+
+
 function getAverageSales() {
   const sales = 6.3;
   const hours = 1;
