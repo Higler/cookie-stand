@@ -16,4 +16,4 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 ![lighthouse screenshot](07lablighthouse.PNG)
 
 ### Reflections and Comments
-Today was difficult but managable, the js was a little difficult at first but made sense the more I did it, the css still is tough to grasp and fights me and I feel slows me down. Again got too woried about big things and little issues tripped me up.
+Today was a great day, the JS came easy today I think I am beginning to write it better and faster I can see it cleareer even if i dont fully understand its meaning i can see what its doing. the struggle today was the table this took almost an hour to get correct mostly because the footer totals was fighting me, but i was able to eventually able to get it at the bottom. i enjoyed working with the classes today and seeing them gives me a little hope im not completely out of my depth.
