@@ -1,21 +1,19 @@
-# cookie-stand# LAB - Number
+# cookie-stand# LAB - Number 06-Objects
 
-## Project Name
+## Project Name cookie stand
 
 I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
 
-### Author: Student/Group Name
+### Author: Student/Group Name joshua watts
 
-### Links and Resources
+### Links and Resources chatgpt
 
 * [submission PR](http://xyz.com)
 * Any Links you used as reference
 
-### Lighthouse Accessibility Report Score
+### Lighthouse Accessibility Report Score 100
 
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
+![lighthouse screenshot](06Objectlighthouse.PNG)
 
 ### Reflections and Comments
-
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+Today was difficult but managable, the js was a little difficult at first but made sense the more I did it, the css still is tough to grasp and fights me and I feel slows me down. Again got too woried about big things and little issues tripped me up.
