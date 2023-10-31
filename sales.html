@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
+  <style>
+    table {
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #000;
+        padding: 8px;
+    }
+</style>
 </head>
 
 <body>
@@ -18,25 +27,34 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="sales.html">Sales Data</a></li>
   </ul>
-
-
-
-  <h2>Seattle</h2>
-  <div id="seattle"></div>
-
-
-  <h2>Tokyo</h2>
-  <div id="tokyo"></div>
-
-
-  <h2>Dubai</h2>
-  <div id="dubai"></div>
-
-  <h2>Paris</h2>
-  <div id="paris"></div>
-
-  <h2>Lima  </h2>
-  <div id="lima"></div>
+  <table id="sales-table">
+    <thead>
+        <tr>
+            <th>Location</th>
+            <th>6:00 AM</th>
+            <th>7:00 AM</th>
+            <th>8:00 AM</th>
+            <th>9:00 AM</th>
+            <th>10:00 AM</th>
+            <th>11:00 AM</th>
+            <th>12:00 PM</th>
+            <th>1:00 PM</th>
+            <th>2:00 PM</th>
+            <th>3:00 PM</th>
+            <th>4:00 PM</th>
+            <th>5:00 PM</th>
+            <th>6:00 PM</th>
+            <th>7:00 PM</th>
+            <th>Daily Location Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="totals">
+            <td>Totals</td>
+            <!-- Data for Totals will be added dynamically -->
+        </tr>
+    </tbody>
+</table>
 
   <footer>
     &copy; 2023 Pat's Salmon Cookies
