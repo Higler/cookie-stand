@@ -1,4 +1,4 @@
-# cookie-stand# LAB - Number 06-Objects
+# cookie-stand# LAB - Number 07-classes/tables
 
 ## Project Name cookie stand
 
@@ -13,7 +13,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Lighthouse Accessibility Report Score 100
 
-![lighthouse screenshot](06Objectlighthouse.PNG)
+![lighthouse screenshot](07lablighthouse.PNG)
 
 ### Reflections and Comments
 Today was difficult but managable, the js was a little difficult at first but made sense the more I did it, the css still is tough to grasp and fights me and I feel slows me down. Again got too woried about big things and little issues tripped me up.
