@@ -1,11 +1,10 @@
-// Define a constructor function for creating shop objects
 function CookieShop(location, minCustomers, maxCustomers, avgCookiesPerCustomer) {
   this.location = location;
   this.minCustomers = minCustomers;
   this.maxCustomers = maxCustomers;
   this.avgCookiesPerCustomer = avgCookiesPerCustomer;
-  this.hourlySales = []; // To store hourly sales data
-  this.dailyTotal = 0; // To store daily total sales
+  this.hourlySales = [];
+  this.dailyTotal = 0;
 
   this.calculateHourlySales = function () {
     for (let hour = 6; hour <= 20; hour++) {
@@ -37,45 +36,48 @@ function CookieShop(location, minCustomers, maxCustomers, avgCookiesPerCustomer)
   };
 }
 
-// Create instances of CookieShop for each location using the constructor
 const seattle = new CookieShop('Seattle', 23, 65, 6.3);
 const tokyo = new CookieShop('Tokyo', 3, 24, 1.2);
 const dubai = new CookieShop('Dubai', 11, 38, 3.7);
 const paris = new CookieShop('Paris', 20, 38, 2.3);
 const lima = new CookieShop('Lima', 2, 16, 4.6);
 
-// Calculate hourly sales for each shop
 seattle.calculateHourlySales();
 tokyo.calculateHourlySales();
 dubai.calculateHourlySales();
 paris.calculateHourlySales();
 lima.calculateHourlySales();
 
-// Function to calculate and display the totals
 function displayTotals() {
   const totalsRow = document.getElementById('totals');
 
-  for (let hour = 0; hour <= 14; hour++) {
-    let hourlyTotal = 0;
+  if (totalsRow) {
+    for (let hour = 0; hour <= 14; hour++) {
+      let hourlyTotal = 0;
 
-    for (const shop of [seattle, tokyo, dubai, paris, lima]) {
-      hourlyTotal += shop.hourlySales[hour];
-    }
+      for (const shop of [seattle, tokyo, dubai, paris, lima]) {
+        hourlyTotal += shop.hourlySales[hour];
+      }
 
-    if (hour === 14) {
-      totalsRow.children[hour].textContent = hourlyTotal;
-    } else {
-      totalsRow.children[hour].textContent = hourlyTotal;
+      const cell = document.createElement('td');
+
+      if (hour === 14) {
+        cell.textContent = hourlyTotal;
+      } else {
+        cell.textContent = hourlyTotal;
+      }
+
+      totalsRow.appendChild(cell);
     }
   }
 }
 
-// Render sales data for each shop
+
 seattle.render();
 tokyo.render();
 dubai.render();
 paris.render();
 lima.render();
 
-// Display totals in the table
+
 displayTotals();
