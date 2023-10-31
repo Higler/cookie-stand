@@ -20,7 +20,7 @@ const seattle = {
       const cookies = this.hourlySales[hour - 6];
       totalCookies += cookies;
       const li = document.createElement('li');
-      li.textContent = `${hour}am: ${cookies} cookies`;
+      li.textContent = `${hour}00: ${cookies} cookies`;
       ul.appendChild(li);
     }
     const totalLi = document.createElement('li');
@@ -52,7 +52,7 @@ const tokyo = {
       const cookies = this.hourlySales[hour - 6];
       totalCookies += cookies;
       const li = document.createElement('li');
-      li.textContent = `${hour}am: ${cookies} cookies`;
+      li.textContent = `${hour}00: ${cookies} cookies`;
       ul.appendChild(li);
     }
     const totalLi = document.createElement('li');
@@ -84,7 +84,7 @@ const dubai = {
       const cookies = this.hourlySales[hour - 6];
       totalCookies += cookies;
       const li = document.createElement('li');
-      li.textContent = `${hour}am: ${cookies} cookies`;
+      li.textContent = `${hour}00: ${cookies} cookies`;
       ul.appendChild(li);
     }
     const totalLi = document.createElement('li');
@@ -115,7 +115,7 @@ const paris = {
       const cookies = this.hourlySales[hour - 6];
       totalCookies += cookies;
       const li = document.createElement('li');
-      li.textContent = `${hour}am: ${cookies} cookies`;
+      li.textContent = `${hour}00: ${cookies} cookies`;
       ul.appendChild(li);
     }
     const totalLi = document.createElement('li');
@@ -146,7 +146,7 @@ const lima = {
       const cookies = this.hourlySales[hour - 6];
       totalCookies += cookies;
       const li = document.createElement('li');
-      li.textContent = `${hour}am: ${cookies} cookies`;
+      li.textContent = `${hour}00: ${cookies} cookies`;
       ul.appendChild(li);
     }
     const totalLi = document.createElement('li');
