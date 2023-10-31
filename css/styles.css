@@ -61,4 +61,5 @@ ul.navbar li a:hover {
 .image-container img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
