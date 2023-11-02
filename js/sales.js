@@ -1,3 +1,21 @@
+'use strict';
+
+document.getElementById('cookie-stand-form').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const location = document.getElementById('location').value;
+  const minCustomers = parseInt(document.getElementById('min-customers').value);
+  const maxCustomers = parseInt(document.getElementById('max-customers').value);
+  const avgCookiesPerCustomer = parseFloat(document.getElementById('avg-cookies').value);
+
+  const newCookieStand = new CookieShop(location, minCustomers, maxCustomers, avgCookiesPerCustomer);
+  newCookieStand.calculateHourlySales();
+
+  newCookieStand.render();
+
+  document.getElementById('cookie-stand-form').reset();
+});
+
 function CookieShop(location, minCustomers, maxCustomers, avgCookiesPerCustomer) {
   this.location = location;
   this.minCustomers = minCustomers;
