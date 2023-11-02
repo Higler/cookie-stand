@@ -65,23 +65,26 @@ function displayTotals() {
   const totalsRow = document.getElementById('totals');
 
   if (totalsRow) {
-    for (let hour = 0; hour <= 14; hour++) {
+    let dailyTotal = 0;
+
+    for (let hour = 0; hour <= 13; hour++) {
       let hourlyTotal = 0;
 
       for (const shop of [seattle, tokyo, dubai, paris, lima]) {
         hourlyTotal += shop.hourlySales[hour];
       }
 
+      dailyTotal += hourlyTotal;
+
       const cell = document.createElement('td');
-
-      if (hour === 14) {
-        cell.textContent = hourlyTotal;
-      } else {
-        cell.textContent = hourlyTotal;
-      }
-
+      cell.textContent = hourlyTotal;
       totalsRow.appendChild(cell);
     }
+
+    // Add the combined daily location total in the last cell of the totals row
+    const totalCell = document.createElement('td');
+    totalCell.textContent = dailyTotal;
+    totalsRow.appendChild(totalCell);
   }
 }
 
