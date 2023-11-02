@@ -60,11 +60,6 @@ const dubai = new CookieShop('Dubai', 11, 38, 3.7);
 const paris = new CookieShop('Paris', 20, 38, 2.3);
 const lima = new CookieShop('Lima', 2, 16, 4.6);
 
-seattle.calculateHourlySales();
-tokyo.calculateHourlySales();
-dubai.calculateHourlySales();
-paris.calculateHourlySales();
-lima.calculateHourlySales();
 
 function displayTotals() {
   const totalsRow = document.getElementById('totals');
@@ -90,12 +85,17 @@ function displayTotals() {
   }
 }
 
+seattle.calculateHourlySales();
+tokyo.calculateHourlySales();
+dubai.calculateHourlySales();
+paris.calculateHourlySales();
+lima.calculateHourlySales();
+
 
 seattle.render();
 tokyo.render();
 dubai.render();
 paris.render();
 lima.render();
-
 
 displayTotals();
