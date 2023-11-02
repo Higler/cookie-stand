@@ -58,6 +58,10 @@ ul.navbar li a:hover {
   text-align: center;
 }
 
+ table tr td:last-child {
+  background-color: gray;
+}
+
 .image-container img {
   display: block;
   margin: 0 auto;
