@@ -86,9 +86,13 @@ function displayTotals() {
   }
 }
 
+
 const salesTable = document.getElementById('sales-table');
 const headerRow = document.createElement('tr');
-headerRow.innerHTML = '<th></th>';
+headerRow.style = 'background-color: gray; color: white;';
+let locationHeader = document.createElement('th');
+locationHeader.innerHTML = 'Location';
+headerRow.appendChild(locationHeader);
 for (let hour = 6; hour <= 19; hour++) {
   const headerCell = document.createElement('th');
   if (hour === 12) {
@@ -100,6 +104,9 @@ for (let hour = 6; hour <= 19; hour++) {
   }
   headerRow.appendChild(headerCell);
 }
+let totalHeader = document.createElement('th');
+totalHeader.innerHTML = 'Daily Location total';
+headerRow.appendChild(totalHeader);
 salesTable.querySelector('thead').appendChild(headerRow);
 
 seattle.calculateHourlySales();
