@@ -19,17 +19,27 @@ h1 {
 }
 
 h2{
-  /* margin: 10%; */
+  margin: 10%;
   font-size: 18pt;
   font-weight: bold;
 }
-
+p{
+  margin: 15%;
+}
 footer {
-  text-align: center;
+  display: flex;
+  height: 100px;
   background-color: lightgray;
   color:#111;
+  align-items: center;
+  justify-content: center;
 }
 
+.stores{
+  display:inline-block;
+  margin: 10%;
+  font-family: 'Times New Roman', Times, serif;
+}
 ul.navbar {
   list-style-type: none;
   margin: 0;
@@ -57,9 +67,42 @@ ul.navbar li a:hover {
 .image-container {
   text-align: center;
 }
+table{
+  margin: 15px;
+}
+ table tr td:last-child {
+  background-color: gray;
+  color: white;
+}
 
 .image-container img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+}
+#cookie-stand-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+legend {
+padding: 0 10px;
+}
+fieldset{
+  margin: 25px;
+  border: 1px solid black;
+  padding: 10px;
+}
+#cookie-stand-form label, #cookie-stand-form input {
+  margin: 5px;
+  flex: 1;
+  width: 75px;
+
+}
+
+#cookie-stand-form button {
+  flex: 2;
 }
