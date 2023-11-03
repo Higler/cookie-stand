@@ -19,18 +19,27 @@ h1 {
 }
 
 h2{
-  /* margin: 10%; */
+  margin: 10%;
   font-size: 18pt;
   font-weight: bold;
 }
-
+p{
+  margin: 15%;
+}
 footer {
+  display: flex;
   height: 100px;
-  text-align: center;
   background-color: lightgray;
   color:#111;
+  align-items: center;
+  justify-content: center;
 }
 
+.stores{
+  display:inline-block;
+  margin: 10%;
+  font-family: 'Times New Roman', Times, serif;
+}
 ul.navbar {
   list-style-type: none;
   margin: 0;

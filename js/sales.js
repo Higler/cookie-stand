@@ -25,7 +25,7 @@ function CookieShop(location, minCustomers, maxCustomers, avgCookiesPerCustomer)
   this.dailyTotal = 0;
 
   this.calculateHourlySales = function () {
-    for (let hour = 6; hour <= 20; hour++) {
+    for (let hour = 6; hour <= 19; hour++) { // Change 20 to 19 to go from 6 AM to 7 PM
       const customers = Math.floor(Math.random() * (this.maxCustomers - this.minCustomers + 1)) + this.minCustomers;
       const cookiesSold = Math.round(customers * this.avgCookiesPerCustomer);
       this.hourlySales.push(cookiesSold);
@@ -60,7 +60,6 @@ const dubai = new CookieShop('Dubai', 11, 38, 3.7);
 const paris = new CookieShop('Paris', 20, 38, 2.3);
 const lima = new CookieShop('Lima', 2, 16, 4.6);
 
-
 function displayTotals() {
   const totalsRow = document.getElementById('totals');
 
@@ -81,19 +80,33 @@ function displayTotals() {
       totalsRow.appendChild(cell);
     }
 
-    // Add the combined daily location total in the last cell of the totals row
     const totalCell = document.createElement('td');
     totalCell.textContent = dailyTotal;
     totalsRow.appendChild(totalCell);
   }
 }
 
+const salesTable = document.getElementById('sales-table');
+const headerRow = document.createElement('tr');
+headerRow.innerHTML = '<th></th>';
+for (let hour = 6; hour <= 19; hour++) {
+  const headerCell = document.createElement('th');
+  if (hour === 12) {
+    headerCell.textContent = '12 PM';
+  } else if (hour < 12) {
+    headerCell.textContent = hour + ' AM';
+  } else {
+    headerCell.textContent = (hour - 12) + ' PM';
+  }
+  headerRow.appendChild(headerCell);
+}
+salesTable.querySelector('thead').appendChild(headerRow);
+
 seattle.calculateHourlySales();
 tokyo.calculateHourlySales();
 dubai.calculateHourlySales();
 paris.calculateHourlySales();
 lima.calculateHourlySales();
-
 
 seattle.render();
 tokyo.render();
